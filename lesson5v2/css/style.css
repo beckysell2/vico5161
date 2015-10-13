@@ -1,0 +1,89 @@
+html {
+    background-color: #CCCCCC;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #FFFFFF;
+}
+
+
+h1 {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 3em;
+    color: #808080;
+    border-style: solid;
+    border-color: red;
+    padding-left: 100px;
+    padding-top: 10px;
+    background-color: beige;
+}
+
+h2 h3 {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 2em;
+    color: #999999;
+}
+
+nav {
+    margin-left: 100px;
+    background-color:aquamarine;
+}
+
+nav a {
+    text-decoration: none;
+    color: #999999;
+    border-style: solid;
+}
+
+nav a:hover {
+    color: black;
+    font-weight: 700;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.main-text {
+    text-align: center;
+    padding: 0 100px 0 100px;
+}
+
+.text-content {
+    text-align: center;
+}
+
+.sidebar {
+    width: 20%;
+    padding: 
+}
+
+.color-home {
+    width: 30%;
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+}
+
+.color-content1 {
+    width: 30%;
+}
+
+.color-content2 {
+    width: 30%;
+}
+
+.color-content3 {
+    width: 30%;
+}
+
+footer {
+    text-align: center;
+    background-color: #dddddd;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
