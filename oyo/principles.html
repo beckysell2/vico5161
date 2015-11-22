@@ -2,29 +2,59 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <meta name="description" content="A website about the definitions of The Gestalt Principles and design.">
         
-        <title>Gestalt Principles: Laws of Visual Perception</title>
+        <title>Gestalt Principles: The Principles of Design</title>
         
-        <!-- adding in css link -->
+        <meta name="description" content="The main principles of Gestalt design">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        
+        
+        <!-- adding in css link to custom stylesheet -->
         <link rel="stylesheet" type="text/css" href="css/main.css">
+        <!-- css link to normalize and html5 stylesheet -->
+        <link rel="stylesheet" href="css/normalize.css">
+        <!-- adding javascript from html5 boilerplate -->
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        
+        
+        
         
         <!-- adding a Google font, Open Sans -->
         <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Libre+Baskerville' rel='stylesheet' type='text/css'>
+        
     </head>
     
 <body>
+    <!-- note for IE 8, from HTML5 Boilerplate -->
+    <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
 
 <header>
+    <div id="display">
     <h1><a href="index.html">Gestalt Design</a></h1>
     
-    <nav>
+    <nav id="desktop">
         <ul>
-            <li><a href="principles.html">the principles</a></li>
+            <span class="active"><li>the principles</li></span>
             <li><a href="about.html">about</a></li>
         </ul>
     </nav>
+    </div>
+    
+    <nav id="mobile">
+        <div id="trigger">
+            <img src="img/menu.svg" alt="mobile menu"/>
+        </div>
+        
+        <ul id="menu">
+            <span class="active"><li>the principles</li></span>
+            <li><a href="about.html">about</a></li>
+        </ul>
+    </nav>
+    <div class="clear-fix"></div>
 </header>
     
 <div>
