@@ -66,24 +66,17 @@ h3 {
 nav a {
     color: #52707A;
     text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: all ease-in-out .5s;
 }
 
 nav a:hover {
-    font-style: italic;
     color: #7e7e7e;
+    border-color: #7e7e7e;
 }
 
 ul {
     list-style: none;
-}
-
-ul a {
-    text-decoration: none;
-    color: #52707A;
-}
-
-ul a:hover {
-    font-style: italic;
 }
 
 p {
