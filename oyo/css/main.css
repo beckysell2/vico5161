@@ -94,6 +94,10 @@ p {
 footer {
     background-color: #E0E0E0;
     font-size: .7em;
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    padding-top: 10px;
 }
 
 #main-image {
@@ -103,7 +107,7 @@ footer {
 }
 
 
-/*------ Mobile Menu -------*/
+/*------ Mobile Menu and Display -------*/
 
 @media screen and (max-width: 767px) {
     #desktop {
@@ -136,5 +140,36 @@ footer {
     
     #mobile li a:active, #mobile li a:hover {
         background-color: #E0E0E0;
+    }
+}
+
+/* ---------- Desktop Menu ------------*/
+@media screen and (min-width: 768px) {
+    #mobile {
+        display: none;
+    }
+    
+    header h1 {
+        float: left;
+        width: 25%;
+        margin-left: 0px;
+        margin-right: 20px;
+    }
+    
+    #desktop li {
+        display: inline-block;
+        padding: 5px 15px 5px 15px;
+        float: left;
+        margin-top: 29px;
+    }
+    
+    .clear-fix {
+        clear: both;
+    }
+    
+    #display {
+        max-width: 960px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
