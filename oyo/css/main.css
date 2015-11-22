@@ -75,6 +75,10 @@ nav a:hover {
     border-color: #7e7e7e;
 }
 
+.active {
+    color: #90C3D4;
+}
+
 ul {
     list-style: none;
 }
