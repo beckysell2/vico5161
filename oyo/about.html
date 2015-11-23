@@ -35,7 +35,7 @@
     <nav id="desktop">
         <ul>
             <li><a href="principles.html">the principles</a></li>
-            <span class="active"><li>about</li></span>
+            <li class="active">about</li></span>
         </ul>
     </nav>
     </div>
@@ -47,24 +47,22 @@
         
         <ul id="menu">
             <li><a href="principles.html">the principles</a></li>
-            <span class="active"><li>about</li></span>
+            <li class="active">about</li>
         </ul>
     </nav>
     <div class="clear-fix"></div>
 </header>
 
-<div>
+<div id="main-image">
 <img src="img/wertheimer.jpg" alt="Max Wertheimer">
     <!-- image source http://www.esslinger-zeitung.de/imageServer/bilderverwaltung/Artikelbilder/20130420/thumbnails/214187_442x269_2004201320sd33a.jpg -->
 </div>
 
-<div>
+<div id="main-content">
 <h2>What is Gestalt?</h2>
         <p>The German word "gestalt" can be translated into meaning "whole" or "form." Originating in the 1920s, it is a form of psychology that looks at the human mind and behaviors as a whole. Founded by Max Wertheimer, Wolfgan Kohler and Kurt Koffka, gestalt includes a set of organizing principles known as Gestalt Laws.</p>
     <!-- http://webspace.ship.edu/cgboer/gestalt.html -->
-</div>
 
-<div>
 <h2>Learn More about Gestalt in Design</h2>
     <ul>
         <li><a href="http://www.leonardo.info/isast/articles/behrens.html" target="_blank">Art, Design and Gestalt Theory by Roy R. Behrens</a></li>
@@ -77,6 +75,22 @@
 <footer>
     &copy; 2015
 </footer> 
+    
+    <!-- script for the mobile toggle menu, with calls to files from HTML5 Biolerplate -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">        </script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    
+<!-- script for toggle mobile menu, same as Nick's demo in class -->
+    <script>
+	   $(function(){
+		       $("#mobile ul").css("display", "none");
+		       $("#trigger").on("click", function(){
+			      $("#mobile ul").slideToggle(); 
+		       });  
+	        });
+	    </script>
     
 </body>
 </html>
