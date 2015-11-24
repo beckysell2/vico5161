@@ -155,6 +155,70 @@ p {
     color: #2a2a2a;
 }
 
+form {
+        margin-left: 30%;
+        margin-right: 30%;
+}
+    
+form input {
+        margin-left: 10px;   
+}
+    
+form p {
+        margin-top: -10px;
+        color: #707070;
+}
+
+textarea {
+    border: 1px solid #E0E0E0;
+    color: #707070;
+}
+
+textarea:focus {
+    background-color: rgba(144,195,212, .2); 
+    outline: none;
+    transition: all ease-in-out .25s;
+}
+
+input[type=text]{
+    border: 1px solid #E0E0E0;  
+    width: 200px;
+}
+
+input[type=text]:focus {
+    background-color: rgba(144,195,212, .2); 
+    width: 200px;
+    outline: none;
+    transition: all ease-in-out .25s;
+}
+
+input#reset, input#reset:active {
+    background-color: #F0F0F0;
+    outline: none;
+    transition: all ease-in-out .5s;
+}
+
+input#reset:hover, input#reset:active {
+    background-color: #90C3D4;
+    color: #FFFFFF;
+}
+
+input#submit, input#submit:active {
+    background-color: #F0F0F0;
+    outline: none;
+    transition: all ease-in-out .5s;
+}
+
+input#submit:hover, input#submit:active {
+    background-color: #90C3D4;
+    color: #FFFFFF;
+}
+
+#button {
+    width: 100%;
+    padding-left: 25%;
+}
+
 footer {
     background-color: #E0E0E0;
     font-size: .7em;
@@ -174,6 +238,8 @@ footer {
 #main-image img {
     width: 100%;
 }
+
+
 
 
 /*------ Mobile Menu and Display -------*/
@@ -211,7 +277,16 @@ footer {
         background-color: #E0E0E0;
     }
     
+    form {
+        width: 90%;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
     
+    form input {
+        width: 150px;
+    }
+
 }
 
 /* ---------- Desktop Menu ------------*/
@@ -239,10 +314,15 @@ footer {
         margin-right: auto;
     }
     
-   
+    #main-content {
+        position: relative;
+        overflow: hidden; 
+    }
     
     #main-inside {
-         
+         max-width: 1024px;
+        margin-left: auto;
+        margin-right: auto;
     }
     
     .principle {

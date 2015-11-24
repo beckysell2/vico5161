@@ -3,9 +3,9 @@
     <head>
         <meta charset="utf-8">
         
-        <title>Gestalt Principles: Laws of Visual Perception</title>
+        <title>Gestalt Principles: Contact Sample Form</title>
         
-        <meta name="description" content="A website about the definitions of The Gestalt Principles and design.">
+        <meta name="description" content="A sample contact form.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
         
@@ -26,8 +26,7 @@
         
     </head>
     
-    
-    
+
 <body>
     <!-- note for IE 8, from HTML5 Boilerplate -->
     <!--[if lt IE 8]>
@@ -42,7 +41,7 @@
         <ul>
             <li><a href="principles.html">the principles</a></li>
             <li><a href="about.html">about</a></li>
-            <li><a href="contact.html">contact</a></li>
+            <li class="active">contact</a></li>
         </ul>
     </nav>
     </div>
@@ -55,22 +54,32 @@
         <ul id="menu">
             <li><a href="principles.html">the principles</a></li>
             <li><a href="about.html">about</a></li>
-            <li><a href="contact.html">contact</a></li>
+            <li class="active">contact</a></li>
         </ul>
     </nav>
     <div class="clear-fix"></div>
 </header>
     
-<div id="main-image">
-    <img src="img/home.svg" alt="The Gestalt Principles of Design home image">
-</div>
-    
 <div id="main-content">
-    <h2>What does Gestalt mean to design?</h2>
-        <p>As humans look at the world around them, our mind attemps to organize the information we see, linking components together and seeing shapes and objects. It is specifically Gestalt Psychologies work in visual perception that applies to design.</p>
-    
-        <p>The theory behind gestalt works into ten main principles that play into how this organization happens. For any designer, these play closely into how we organize and communicate.</p>
-    <!-- http://designshack.net/articles/inspiration/design-science-what-is-gestalt-theory/ -->
+    <h2>Contact Sample Form</h2>
+
+<div id="main-inside">
+    <form action="mailto:beckysell1@gmail.com" method="post" enctype="multipart/form-data" name="Test Email">
+    <p>
+    First Name: <input type="text" name="first name" maxlength="20"></p>
+    <p>
+    Last Name: <input type="text" name="first name" max-length="20"></p>
+    <p>
+    Email Address: <input type="text" name="email address" maxlength="40"></p>
+    <p>
+    Send a message: <textarea maxlength="300" cols="40" rows="5">300 character max</textarea></p>
+    <div id="button">
+    <p>
+    <input id="reset" type="reset" value="Reset">
+    <input id="submit" type="submit" value="Email This Form"></p> 
+    </div>
+    </form>
+</div>
 </div>
     
 <footer>
@@ -96,3 +105,4 @@
     
 </body>
 </html>
+    
