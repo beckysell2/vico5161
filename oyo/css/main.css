@@ -30,7 +30,8 @@ h1 a {
 }
 
 h1 a:hover {
-    border-color: #90C3D4;
+    border-color: #c3d490;
+    color: #c3d490;
 }
 
 #trigger {
@@ -44,15 +45,41 @@ h1 a:hover {
 
 #main-content {
     background-color: #FFFFFF;
-    margin-top: -25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
+
+.principle {
+    margin: 12px;
+    background: #F0F0F0;
+    border-radius: 10px;
+    padding: 20px 20px 20px 20px;
+}
+
+.principle h3 {
+    text-align: center;   
+}
+
+.principle2 {
+    background: #FFFFFF;
+    border-radius: 10px;
+    border: 1px solid #c3d490;
+}
+
+.principle-img {
+    margin: auto;
+    width: 60%;
+    padding-bottom: 20px;
+}
+
 
 h2 {
     font-size: 1.5em;
     font-family: 'Libre Baskerville', serif;
     color: #90C3D4;
-    padding: 20px 30px 10px 30px;
+    padding: 20px 30px 30px 30px;
     text-align: center;
+    background-color: #F0F0F0;
 }
 
 #main-content p {
@@ -75,7 +102,7 @@ h2 {
     padding-bottom: 10px;
     display: block;
     margin-right: 45px;
-    border-top: solid 1px #7e7e7e;
+    border-top: solid 1px #c3d490;
     text-align: center;
 }
 
@@ -86,7 +113,7 @@ h2 {
 }
 
 #main-content li a:active, #main-content li a:hover {
-    color: #90C3D4;   
+    color: #c3d490;   
 }
 
 h3 {
@@ -103,12 +130,12 @@ nav a {
 }
 
 nav a:hover {
-    color: #7e7e7e;
-    border-color: #7e7e7e;
+    color: #c3d490;
+    border-color: #c3d490;
 }
 
 .active {
-    color: #90C3D4;
+    color: #c3d490;
 }
 
 #mobile .active {
@@ -135,6 +162,7 @@ footer {
     height: 30px;
     text-align: center;
     padding-top: 10px;
+    margin-top: 20px;
 }
 
 #main-image {
@@ -182,6 +210,8 @@ footer {
     #mobile li a:active, #mobile li a:hover {
         background-color: #E0E0E0;
     }
+    
+    
 }
 
 /* ---------- Desktop Menu ------------*/
@@ -203,13 +233,42 @@ footer {
         margin-top: 29px;
     }
     
-    .clear-fix {
-        clear: both;
-    }
-    
     #display {
         max-width: 960px;
         margin-left: auto;
         margin-right: auto;
+    }
+    
+   
+    
+    #main-inside {
+         
+    }
+    
+    .principle {
+        width: 27%;
+        float: left;
+    }
+    
+    .principle2 {
+        height: 400px;
+    }
+    .clear-fix {
+        clear: both;   
+    }
+    
+}
+
+/*--------- 2 column tablet ----------*/
+@media screen and (min-width: 768px)
+                and (max-width: 1023px){
+    
+    .principle {
+          width: 40%; 
+    }
+                    
+    #main-content {
+        padding-left: 10%;
+        padding-right: 10%;
     }
 }
